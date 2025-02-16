@@ -30,5 +30,5 @@ checkconfig() {
 }
 
 start_pre() {
-	checkconfig
+	checkconfig || return 1
 }
