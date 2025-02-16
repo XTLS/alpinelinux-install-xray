@@ -12,7 +12,9 @@ command_args="run -confdir $confdir"
 command_user="nobody"
 
 pidfile="/run/xray.pid"
-command_background="yes"
+supervisor="supervise-daemon"
+respawn_delay=5
+respawn_max=0
 
 extra_commands="checkconfig"
 
